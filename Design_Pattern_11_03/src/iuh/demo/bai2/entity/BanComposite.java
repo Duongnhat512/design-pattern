@@ -6,15 +6,15 @@ import java.util.List;
 public class BanComposite implements Composite{
     private String name;
     private double price;
-    private List<DoUongLeaf> list;
+    private List<Composite> list;
 
     public BanComposite(String name) {
         this.name = name;
-        this.list = new ArrayList<DoUongLeaf>();
+        this.list = new ArrayList<Composite>();
         this.price = 0;
     }
 
-    public void add(DoUongLeaf doUong) {
+    public void add(Composite doUong) {
         list.add(doUong);
     }
 

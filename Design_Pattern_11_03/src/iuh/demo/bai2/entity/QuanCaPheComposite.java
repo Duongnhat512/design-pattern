@@ -6,15 +6,15 @@ import java.util.List;
 public class QuanCaPheComposite implements Composite{
     private String name;
     private double price;
-    private List<BanComposite> list;
+    private List<Composite> list;
 
     public QuanCaPheComposite(String name) {
         this.name = name;
         this.price = 0;
-        this.list = new ArrayList<BanComposite>();
+        this.list = new ArrayList<Composite>();
     }
 
-    public void add(BanComposite ban) {
+    public void add(Composite ban) {
         list.add(ban);
     }
 
