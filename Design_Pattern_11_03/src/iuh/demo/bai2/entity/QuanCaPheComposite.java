@@ -5,12 +5,12 @@ import java.util.List;
 
 public class QuanCaPheComposite implements Composite{
     private String name;
-    private double price;
+    private double totalPrice;
     private List<Composite> list;
 
     public QuanCaPheComposite(String name) {
         this.name = name;
-        this.price = 0;
+        this.totalPrice = 0;
         this.list = new ArrayList<Composite>();
     }
 
@@ -24,7 +24,7 @@ public class QuanCaPheComposite implements Composite{
         for (Composite composite : list) {
             totalPrice += composite.totalPrice();
         }
-        this.price = totalPrice;
-        return this.price;
+        this.totalPrice = totalPrice;
+        return this.totalPrice;
     }
 }
